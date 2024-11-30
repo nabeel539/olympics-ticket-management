@@ -8,19 +8,23 @@ const Tabs = ({ setTab }) => {
     setTab(tab);
   };
   return (
-    <div className="flex justify-center my-1">
+    <div className="flex justify-center gap-4 bg-gray-100 p-2 rounded-md shadow-sm my-4">
       <button
         onClick={() => handleTabClick("visitor")}
-        className={`text-xs px-4 py-0.5 w-[100%] rounded-sm ${
-          activeTab === "visitor" ? "bg-blue-500 text-white" : "bg-gray-300"
+        className={`text-xs px-6 py-2 rounded-md transition ${
+          activeTab === "visitor"
+            ? "bg-[#2b293d] text-white shadow-md font-bold"
+            : "bg-gray-300 text-black"
         }`}
       >
-        User
+        Visitor
       </button>
       <button
         onClick={() => handleTabClick("admin")}
-        className={`text-xs ml-1 px-4 py-0.5 w-[100%] rounded-sm ${
-          activeTab === "admin" ? "bg-blue-500 text-white" : "bg-gray-300"
+        className={`text-xs px-6 py-2 rounded-md transition ${
+          activeTab === "admin"
+            ? "bg-[#2b293d] text-white shadow-md font-bold"
+            : "bg-gray-300 text-black"
         }`}
       >
         Admin

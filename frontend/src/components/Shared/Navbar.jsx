@@ -51,27 +51,6 @@ const Navbar = () => {
               className="w-5 cursor-pointer"
               alt="Profile"
             />
-
-            {/* Dropdown Menu */}
-            {/* {token && (
-              <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4">
-                <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded">
-                  <p
-                    onClick={navigate("/profile")}
-                    className="cursor-pointer hover:text-black"
-                  >
-                    My Profile
-                  </p>
-
-                  <p
-                    onClick={logout}
-                    className="cursor-pointer hover:text-black"
-                  >
-                    Logout
-                  </p>
-                </div>
-              </div>
-            )} */}
           </div>
           <img
             // onClick={() => setVisible(true)}
@@ -81,50 +60,6 @@ const Navbar = () => {
           />
         </div>
       </div>
-      {/* side bar menu for small screen */}
-      {/* <div
-        className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${
-          visible ? "w-full" : "w-0"
-        }`}
-      >
-        <div className="flex flex-col test-gray-600">
-          <div
-            onClick={() => setVisible(false)}
-            className="flex items-center gap-4 p-3 cursor-pointer"
-          >
-            <img src={assets.dropdown_icon} className="h-4 rotate-180" alt="" />
-            <p>Back</p>
-          </div>
-          <NavLink
-            onClick={() => setVisible(false)}
-            className="py-2 pl-6 border"
-            to="/"
-          >
-            HOME
-          </NavLink>
-          <NavLink
-            onClick={() => setVisible(false)}
-            className="py-2 pl-6 border"
-            to="/collection"
-          >
-            COLLECTION
-          </NavLink>
-          <NavLink
-            onClick={() => setVisible(false)}
-            className="py-2 pl-6 border"
-            to="/about"
-          >
-            ABOUT
-          </NavLink>
-          <NavLink
-            onClick={() => setVisible(false)}
-            className="py-2 pl-6 border"
-            to="/contact"
-          >
-            CONTACT
-          </NavLink>
-        </div>
-      </div> */}
     </>
   );
 };

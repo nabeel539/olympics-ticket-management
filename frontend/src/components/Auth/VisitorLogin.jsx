@@ -41,8 +41,8 @@ const VisitorLogin = () => {
           setIsAdmin(false);
           localStorage.setItem("isAdmin", false);
 
-          toast.success("Login Successful");
-          navigate("/user-dashboard");
+          toast.success("Loggedin");
+          navigate("/events");
         } else {
           throw new Error(response.data.message);
         }
@@ -58,7 +58,7 @@ const VisitorLogin = () => {
           localStorage.setItem("token", response.data.token);
 
           toast.success("Register Successful");
-          navigate("/user-dashboard");
+          navigate("/events");
         } else {
           throw new Error(response.data.message);
         }
@@ -164,7 +164,7 @@ const VisitorLogin = () => {
       )}
       <button
         type="submit"
-        className="bg-blue-500 text-white py-2 px-4 w-[100%] rounded-md font-medium"
+        className="bg-[#2b293d] text-white py-2 px-4 w-[100%] rounded-md font-medium text-xs"
       >
         {currState} as User
       </button>

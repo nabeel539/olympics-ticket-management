@@ -361,16 +361,6 @@ export const giftTicket = async (req, res) => {
         .json({ success: false, message: "Ticket not found" });
     }
 
-    // // Check if the ticket has already been gifted
-    // if (ticket.status === "gifted") {
-    //   console.log(ticket.status);
-    //   return res.status(400).json({
-    //     success: false,
-    //     message:
-    //       "This ticket has already been gifted and cannot be gifted again.",
-    //   });
-    // }
-    // Check if the authenticated user is the ticket owner
     if (!ticket.visitorId.equals(req.user._id)) {
       return res.status(403).json({
         success: false,

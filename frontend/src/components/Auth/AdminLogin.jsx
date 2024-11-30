@@ -70,7 +70,7 @@ const AdminLogin = () => {
       </div>
       <button
         type="submit"
-        className="bg-blue-500 text-white py-2 px-4 w-[100%] rounded-md font-medium"
+        className="bg-[#2b293d] text-white py-2 px-4 w-[100%] rounded-md font-medium text-xs"
       >
         Login as Admin
       </button>

@@ -22,15 +22,13 @@ const VisitorNavbar = () => {
   };
   return (
     <div className="flex items-center justify-between font-medium bg-slate-900 shadow-md px-3 py-5">
-      <NavLink to="/user-dashboard">
-        <h2 className="text-2xl font-semibold text-white">
-          Olympic Ticket Management
-        </h2>
+      <NavLink to="/events">
+        <img src={assets.appLogo} className="w-30" alt="logo" />
       </NavLink>
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
         <NavLink to="/events" className="flex flex-col items-center gap-1">
           <p>Events</p>
-          <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
+          <hr className="w-2/4 border-none h-[1.5px] bg-gray-100 hidden" />
         </NavLink>
         <NavLink to="/history" className="flex flex-col items-center gap-1">
           <p>Purchase History</p>

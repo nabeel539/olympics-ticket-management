@@ -16,11 +16,11 @@ const AdminNavbar = () => {
   };
 
   return (
-    <nav className="bg-red-900 p-4 flex justify-between items-center">
+    <nav className="bg-[#2b293d] p-4 flex justify-between items-center">
       <ul className="flex space-x-4 items-center">
         <li>
           <Link to="/admin-dashboard" className="text-white text-2xl font-bold">
-            Admin Dashboard
+            <img src={assets.appLogo} alt="logo" className="w-32" />
           </Link>
         </li>
         <li>
@@ -42,15 +42,11 @@ const AdminNavbar = () => {
           {token && (
             <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4">
               <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded shadow-lg">
-                {/* <p
-                  onClick={() => navigate("/profile")}
-                  className="cursor-pointer hover:text-black"
+                <p
+                  onClick={logout}
+                  className="cursor-pointer hover:text-black flex"
                 >
-                  My Profile
-                </p> */}
-
-                <p onClick={logout} className="cursor-pointer hover:text-black">
-                  Logout
+                  Logout <img src={assets.logout} alt="" className="w-6 ml-3" />
                 </p>
               </div>
             </div>

@@ -243,19 +243,19 @@ const Ticket = () => {
                 <div className="p-4 flex items-center flex-col gap-2">
                   <button
                     onClick={() => handleCancelTicket(ticket._id)}
-                    className="bg-red-500 text-white px-3 py-2 rounded hover:bg-red-600 transition duration-200 mr-2 text-xs"
+                    className="bg-red-500 text-white px-3 py-2 rounded hover:bg-red-600 transition duration-200 text-xs w-[100%]"
                   >
                     Cancel Ticket
                   </button>
                   <button
                     onClick={() => downloadPDF(ticket._id)}
-                    className="bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 transition duration-200 text-xs"
+                    className="bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 transition duration-200 text-xs w-[100%]"
                   >
                     Download PDF
                   </button>
                   <button
                     onClick={() => handleGiftTicket(ticket._id)}
-                    className="bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 transition duration-200 text-xs"
+                    className="bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 transition duration-200 text-xs w-[100%]"
                   >
                     Gift Ticket
                   </button>

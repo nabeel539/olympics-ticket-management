@@ -122,22 +122,26 @@ export const getTicketBookingHistory = async (req, res) => {
     // Format the ticket booking history for response
     const bookingHistory = tickets.map((ticket) => ({
       ticketId: ticket._id,
-      visitor: {
-        name: ticket.visitorId.name,
-        email: ticket.visitorId.email,
-        mobile: ticket.visitorId.mobile,
-      },
-      event: {
-        name: ticket.eventId.name,
-        date: ticket.eventId.date,
-        time: ticket.eventId.time,
-        venue: ticket.eventId.venue,
-        price: ticket.eventId.price,
-      },
-      status: ticket.status,
-      purchaseDate: ticket.purchaseDate,
-      paymentStatus: ticket.paymentStatus,
-      numberOfTickets: ticket.numberOfTickets,
+      visitor: ticket.visitorId
+        ? {
+            name: ticket.visitorId.name || "N/A",
+            email: ticket.visitorId.email || "N/A",
+            mobile: ticket.visitorId.mobile || "N/A",
+          }
+        : { name: "N/A", email: "N/A", mobile: "N/A" }, // Default values if visitorId is null
+      event: ticket.eventId
+        ? {
+            name: ticket.eventId.name || "N/A",
+            date: ticket.eventId.date || "N/A",
+            time: ticket.eventId.time || "N/A",
+            venue: ticket.eventId.venue || "N/A",
+            price: ticket.eventId.price || 0,
+          }
+        : { name: "N/A", date: "N/A", time: "N/A", venue: "N/A", price: 0 }, // Default values if eventId is null
+      status: ticket.status || "N/A",
+      purchaseDate: ticket.purchaseDate || "N/A",
+      paymentStatus: ticket.paymentStatus || "N/A",
+      numberOfTickets: ticket.numberOfTickets || 0,
     }));
 
     // Send response
