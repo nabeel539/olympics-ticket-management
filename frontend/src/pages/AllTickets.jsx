@@ -73,7 +73,7 @@ const BookingHistory = () => {
         {/* Search Input */}
         <input
           type="text"
-          placeholder="Search by event name, visitor name, or email..."
+          placeholder="Search by games, visitor name, or email..."
           className="border p-2 w-full md:w-1/2 lg:w-[30%] text-[12px] rounded-lg"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}

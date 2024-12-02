@@ -20,12 +20,15 @@ const AdminNavbar = () => {
       <ul className="flex space-x-4 items-center">
         <li>
           <Link to="/admin-dashboard" className="text-white text-2xl font-bold">
-            <img src={assets.appLogo} alt="logo" className="w-32" />
+            {/* <img src={assets.appLogo} alt="logo" className="w-32" /> */}
+            <div className="text-yellow-400 text-xl font-bold">
+              Ticket Bookings
+            </div>
           </Link>
         </li>
         <li>
-          <Link to="/all-events" className="text-white">
-            Events
+          <Link to="/all-games" className="text-white">
+            Games
           </Link>
         </li>
         <li>

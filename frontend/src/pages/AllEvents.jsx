@@ -70,7 +70,7 @@ const EventPage = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Upcoming Events</h1>
+      <h1 className="text-2xl font-bold mb-4">Upcoming Games</h1>
 
       {events.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">

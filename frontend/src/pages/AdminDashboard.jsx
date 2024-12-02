@@ -51,10 +51,10 @@ const AdminDashboard = () => {
       {/* Dashboard Header */}
       <h1 className="text-2xl font-bold text-gray-800">Dashboard</h1>
       <div
-        className="flex items-center justify-center border border-black rounded-md w-[130px] py-3 px-2 hover:bg-slate-300 cursor-pointer"
+        className="flex items-center justify-center border border-black rounded-md w-[130px] py-3 px-2 text-[12px] hover:bg-slate-300 cursor-pointer"
         onClick={handleAddEventClick}
       >
-        <img src={assets.add} className="mr-2 w-4" /> Add Event
+        <img src={assets.add} className="mr-2 w-4" /> Add Games
       </div>
       {/* Add Event Dialog */}
       <AddEventDialog

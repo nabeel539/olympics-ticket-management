@@ -2,7 +2,6 @@ import { useState } from "react";
 import Tabs from "../components/Auth/Tabs";
 import AdminLogin from "../components/Auth/AdminLogin";
 import VisitorLogin from "../components/Auth/VisitorLogin";
-import { assets } from "../assets/assets";
 
 const Auth = () => {
   const [tab, setTab] = useState("visitor");
@@ -15,8 +14,9 @@ const Auth = () => {
         <p className="text-lg mb-6">
           Visit for personalized recommendations today!
         </p>
-        {/* <div className="text-yellow-400 text-3xl font-bold">Eventify</div> */}
-        <img src={assets.appLogo} alt="logo" className="w-52 fixed top-7" />
+        <div className="text-yellow-400 text-3xl font-bold fixed top-9 left-6">
+          Ticket Bookings
+        </div>
       </div>
       {/* Right Section */}
       <div className="flex flex-col justify-center items-center w-1/2 bg-white rounded-l-3xl">

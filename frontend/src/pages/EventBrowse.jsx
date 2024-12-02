@@ -101,12 +101,12 @@ const EventBrowse = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-[16px] font-bold mb-4">Event Browse</h1>
+      <h1 className="text-[16px] font-bold mb-4">Browse Games</h1>
 
       {/* Search Input */}
       <input
         type="text"
-        placeholder="Search events by name, venue, date, or time"
+        placeholder="Search games by name, venue, date, or time"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         className="border p-2 text-[12px] rounded-[10px] mb-4 w-[30%]"

@@ -42,7 +42,7 @@ const VisitorLogin = () => {
           localStorage.setItem("isAdmin", false);
 
           toast.success("Loggedin");
-          navigate("/events");
+          navigate("/games");
         } else {
           throw new Error(response.data.message);
         }
@@ -58,7 +58,7 @@ const VisitorLogin = () => {
           localStorage.setItem("token", response.data.token);
 
           toast.success("Register Successful");
-          navigate("/events");
+          navigate("/games");
         } else {
           throw new Error(response.data.message);
         }

@@ -21,7 +21,7 @@ function App() {
         {/* Visitor Routes */}
         <Route element={<VisitorLayout />}>
           <Route path="/user-dashboard" element={<VisitorDashboard />} />
-          <Route path="/events" element={<EventBrowse />} />
+          <Route path="/games" element={<EventBrowse />} />
           <Route path="/history" element={<Ticket />} />
           <Route path="/profile" element={<VisitorProfile />} />
         </Route>
@@ -36,7 +36,7 @@ function App() {
         >
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
           <Route path="/all-tickets" element={<AllTickets />} />
-          <Route path="/all-events" element={<AllEvents />} />
+          <Route path="/all-games" element={<AllEvents />} />
         </Route>
 
         {/* Auth Route */}

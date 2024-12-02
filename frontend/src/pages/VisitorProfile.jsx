@@ -125,7 +125,7 @@ const VisitorProfile = () => {
       <div className="mt-6 flex justify-center gap-4">
         {!isEditing ? (
           <button
-            className="bg-blue-500 text-white py-2 px-4 rounded-md"
+            className="bg-[#1f2937] text-white py-2 px-4 rounded-md"
             onClick={() => setIsEditing(true)}
           >
             Edit Profile
